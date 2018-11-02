@@ -5,7 +5,7 @@
   let saveBtn = document.getElementById('WIN_3_300000300')
   if (!a) return alert('Μπορεί να ξεκλειδώσει μόνο notes στο Apply το Production!')
   a.removeAttribute('readonly')
-  let imageUrl = 'https://ae01.alicdn.com/kf/HTB118uvSXXXXXcVXXXXq6xXFXXXH/9-6cm-9-8cm-Car-St…n-Funny-Ninja-Vinyl-Decal-Black-Silver-Accessories-S6-4099.jpg_640x640.jpg'
+  let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja'
   a.style['background-image'] = `url(${imageUrl})`
   a.style['background-size'] = 'contain'
   a.style['background-repeat'] = 'no-repeat'
