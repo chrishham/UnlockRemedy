@@ -5,7 +5,7 @@
   let saveBtn = document.getElementById('WIN_3_300000300')
   if (!a) return alert('Μπορεί να ξεκλειδώσει μόνο notes στο Apply το Production!')
   a.removeAttribute('readonly')
-  let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja'
+  let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja.jpg'
   a.style['background-image'] = `url(${imageUrl})`
   a.style['background-size'] = 'contain'
   a.style['background-repeat'] = 'no-repeat'
