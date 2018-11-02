@@ -7,7 +7,7 @@
   unlock(notes)
   unlock(summary)
   let saveBtn = document.getElementById('WIN_3_300000300')
-  saveBtn.addEventListener('click', () => {
+  saveBtn.addEventListener('click', function () {
     setTimeout(() => {
       console.log('i was clicked!')
       location.reload()
