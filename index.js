@@ -1,3 +1,5 @@
+/* global alert, location, setTimeout */
+
 (function () {
   let a = document.getElementById('arid_WIN_3_10000101')
   let saveBtn = document.getElementById('WIN_3_300000300')
@@ -13,6 +15,11 @@
   a.style['padding-top'] = '10px'
   a.placeholder = 'Εισάγετε το νέο κείμενο και μετά πατήστε save...'
   alert('Επιτυχές ξεκλείδωμα notes!')
-  saveBtn.addEventListener('click', () => { setTimeout(() => { console.log('i was clicked!') location.reload() }, 1000) })
+  saveBtn.addEventListener('click', () => {
+    setTimeout(() => {
+      console.log('i was clicked!')
+      location.reload()
+    }, 1000)
+  })
 }
 )()
