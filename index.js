@@ -19,7 +19,7 @@
 function unlock (a) {
   let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja.jpg'
   a.removeAttribute('readonly')
-  a.style['background-image'] = `url(${imageUrl})`
+  a.style['background-image'] = 'url' + imageUrl
   a.style['background-size'] = 'contain'
   a.style['background-repeat'] = 'no-repeat'
   a.style['background-position-x'] = 'right'
