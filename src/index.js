@@ -1,5 +1,5 @@
 /* global setTimeout,location */
-
+var forEach = require('array-foreach');
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
 
