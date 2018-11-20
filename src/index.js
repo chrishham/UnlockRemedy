@@ -1,4 +1,4 @@
-/* global setTimeout */
+/* global setTimeout,location */
 
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
@@ -7,8 +7,14 @@
     let cursorUrl = 'https://chrishham.github.io/remedy/images/key.cur'
     el.addEventListener('click', removeReadonly)
     el.style['cursor'] = `url('${cursorUrl}'),crosshair`
-  }
-  )
+    let saveBtn = document.getElementById('WIN_3_300000300')
+    saveBtn.addEventListener('click', () => {
+      setTimeout(() => {
+        console.log('i was clicked!')
+        location.reload()
+      }, 1000)
+    })
+  })
 }
 )()
 
