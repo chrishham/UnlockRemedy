@@ -21,7 +21,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 
 function removeReadonly (event) {
   let a = event.target
-  // console.log(a)
+  console.log(a)
   let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja.jpg'
   a.removeAttribute('readonly')
   a.style['background-image'] = `url(${imageUrl})`
