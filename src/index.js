@@ -7,7 +7,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
   readOnlys.forEach(el => {
     let cursorUrl = isChrome ? 'https://chrishham.github.io/remedy/images/key_24x24.png' : 'https://chrishham.github.io/remedy/images/key_24x24.cur'
     el.addEventListener('click', removeReadonly)
-    el.style['cursor'] = `url('${cursorUrl}'),crosshair`
+    el.style['cursor'] = `url('${cursorUrl}') 25 15,crosshair`
     let saveBtn = document.getElementById('WIN_3_300000300')
     saveBtn.addEventListener('click', () => {
       setTimeout(() => {
