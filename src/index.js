@@ -1,10 +1,11 @@
 /* global setTimeout,location */
-import 'nodelist-foreach-polyfill';
+import 'nodelist-foreach-polyfill'
+var isChrome = !!window.chrome && !!window.chrome.webstore;
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
 
   readOnlys.forEach(el => {
-    let cursorUrl = 'https://chrishham.github.io/remedy/images/key.cur'
+    let cursorUrl = isChrome ? 'https://chrishham.github.io/remedy/images/key_24x24.png' : 'https://chrishham.github.io/remedy/images/key_24x24.cur'
     el.addEventListener('click', removeReadonly)
     el.style['cursor'] = `url('${cursorUrl}'),crosshair`
     let saveBtn = document.getElementById('WIN_3_300000300')
@@ -20,7 +21,7 @@ import 'nodelist-foreach-polyfill';
 
 function removeReadonly (event) {
   let a = event.target
-  console.log(a)
+  // console.log(a)
   let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja.jpg'
   a.removeAttribute('readonly')
   a.style['background-image'] = `url(${imageUrl})`
