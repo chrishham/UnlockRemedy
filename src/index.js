@@ -3,9 +3,9 @@ import 'nodelist-foreach-polyfill'
 var isChrome = !!window.chrome && !!window.chrome.webstore;
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
-
+  console.log('isChrome : ' + isChrome)
   readOnlys.forEach(el => {
-    let cursorUrl = isChrome ? 'https://chrishham.github.io/remedy/images/key_24x24.png' : 'https://chrishham.github.io/remedy/images/key_24x24.cur'
+    let cursorUrl = isChrome ? 'https://chrishham.github.io/remedy/images/key_24x24.png' : 'https://chrishham.github.io/remedy/images/key.cur'
     el.addEventListener('click', removeReadonly)
     el.style['cursor'] = isChrome ? `url('${cursorUrl}') 25 15,crosshair` : `url('${cursorUrl}'),crosshair`
     let saveBtn = document.getElementById('WIN_3_300000300')
