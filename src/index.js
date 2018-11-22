@@ -1,10 +1,10 @@
 /* global setTimeout,location */
 let isChrome
 (function () {
-  isChrome = !!window.chrome && !!window.chrome.webstore
   let readOnlys = document.querySelectorAll('[readonly]')
-  console.log('isChrome : ' + isChrome)
   if (!readOnlys) return
+  isChrome = !!window.chrome && !!window.chrome.webstore
+  console.log('isChrome : ' + isChrome)
   readOnlys.forEach(el => {
     let previous = el.previousElementSibling
     if (previous && /(Notes|Summary)/.test(previous.innerHTML)) {
