@@ -1,6 +1,7 @@
 /* global setTimeout,location */
-isChrome = !!window.chrome && !!window.chrome.webstore;
+let isChrome
 (function () {
+  isChrome = !!window.chrome && !!window.chrome.webstore
   let readOnlys = document.querySelectorAll('[readonly]')
   console.log('isChrome : ' + isChrome)
   if (!readOnlys) return
