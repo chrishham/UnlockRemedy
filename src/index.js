@@ -1,4 +1,5 @@
 /* global setTimeout,location */
+import 'nodelist-foreach-polyfill'
 let isChrome
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
