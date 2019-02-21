@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "build": "webpack --mode production --module-bind js=babel-loader",
-    "git": "yarn build && git add . && git commit -m \"minor fix\" && git push "
+    "deploy": "yarn build && git add . && git commit -m \"minor fix\" && git push "
   },
   "repository": {
     "type": "git",

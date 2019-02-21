@@ -4,7 +4,7 @@ let isChrome
 (function () {
   let readOnlys = document.querySelectorAll('[readonly]')
   if (!readOnlys) return
-  isChrome = !!window.chrome && !!window.chrome.webstore
+  isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)
   console.log('isChrome : ' + isChrome)
   readOnlys.forEach(el => {
     let previous = el.previousElementSibling
