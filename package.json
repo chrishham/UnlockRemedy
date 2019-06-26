@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrishham/remedy.git"
+    "url": "git+https://github.com/chrishham/UnlockRemedy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrishham/remedy/issues"
+    "url": "https://github.com/chrishham/UnlockRemedy/issues"
   },
-  "homepage": "https://github.com/chrishham/remedy#readme",
+  "homepage": "https://github.com/chrishham/UnlockRemedy#readme",
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",

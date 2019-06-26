@@ -10,7 +10,7 @@ let isChrome
     let previous = el.previousElementSibling
     if (previous && /(Notes|Summary)/.test(previous.innerHTML)) {
       console.log(el)
-      let cursorUrl = isChrome ? 'https://chrishham.github.io/remedy/images/key_24x24.png' : 'https://chrishham.github.io/remedy/images/key.cur'
+      let cursorUrl = isChrome ? 'https://chrishham.github.io/UnlockRemedy/images/key_24x24.png' : 'https://chrishham.github.io/UnlockRemedy/images/key.cur'
       el.addEventListener('click', removeReadonly)
       el.style['cursor'] = isChrome ? `url('${cursorUrl}') 25 15,crosshair` : `url('${cursorUrl}'),crosshair`
     }
@@ -30,7 +30,7 @@ let isChrome
 function removeReadonly (event) {
   let a = event.target
   // console.log(a)
-  let imageUrl = 'https://chrishham.github.io/remedy/images/Ninja.jpg'
+  let imageUrl = 'https://chrishham.github.io/UnlockRemedy/images/Ninja.jpg'
   a.removeAttribute('readonly')
   a.style['background-image'] = `url(${imageUrl})`
   a.style['background-size'] = 'contain'
